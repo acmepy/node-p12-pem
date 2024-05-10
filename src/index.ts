@@ -8,6 +8,6 @@ export function getPemFromP12(certPath: string, password: string) {
   return convertToPem(p12File, password);
 }
 
-export function getPemFromP12Buff(p12base64: any, password: string) {
+export function getPemFromP12Buffer(p12base64: any, password: string) {
   return convertToPem(p12base64, password);
 }
