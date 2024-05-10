@@ -7,3 +7,7 @@ export function getPemFromP12(certPath: string, password: string) {
   const p12File = fs.readFileSync(certPath, { encoding: 'binary' });
   return convertToPem(p12File, password);
 }
+
+export function getPemFromP12Buff(p12base64: any, password: string) {
+  return convertToPem(p12base64, password);
+}
